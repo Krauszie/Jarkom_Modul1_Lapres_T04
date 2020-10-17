@@ -10,7 +10,8 @@ Oleh:
 
 **Solusi**
 
-tes
+```http.host contains "testing.mekanis.me"```
+![01](https://user-images.githubusercontent.com/50489529/96352643-01e5d600-10ef-11eb-8ae5-37306bb8d02b.png)
 
 Capture Filter
 
