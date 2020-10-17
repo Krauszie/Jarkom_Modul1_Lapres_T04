@@ -113,7 +113,7 @@ Terakhir dapat dibuka
 
 
 
-##Capture Filter
+## Capture Filter
 
 11. Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 
