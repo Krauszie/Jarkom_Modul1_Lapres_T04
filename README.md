@@ -30,6 +30,8 @@ Maka akan keluar seperti diatas.
 
 12. Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 
+```src port 80```
+
 ![12](https://user-images.githubusercontent.com/55182321/96349948-233dc680-10dd-11eb-97c0-1b53527f27ae.PNG)
 
 Ketik src untuk "berasal" port 80
