@@ -73,6 +73,29 @@ Kemudian dapat dilihat paketnya dan pada bagian Authorization Basicnya akan dida
 6. Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file "Open This.pdf" di Answer.zip. Untuk mendapatkan password zipnya, temukan dalam file "zipkey.txt" (passwordnya adalah isi dari file txt tersebut).
 
 **Solusi**
+Masukan filter
+```ftp-data.command contains Answer.zip``` dan ```ftp-data.command contains zipkey.txt```
+
+![6](https://user-images.githubusercontent.com/55182321/96360236-7186b000-1145-11eb-946b-1286c8bcf18b.PNG)
+Setelah memasukan filter, akan keluar paket yang mengandung Answer.zip pada commandnya
+
+![6a](https://user-images.githubusercontent.com/55182321/96360238-72b7dd00-1145-11eb-898d-0972777b1406.PNG)
+Kemudian Follow tcp stream dan rubah dari ASCII menjadi raw 
+
+![6b](https://user-images.githubusercontent.com/55182321/96360240-73507380-1145-11eb-8a52-9a0cc9c21d28.PNG)
+Save dengan nama Answer.zip
+
+![6c](https://user-images.githubusercontent.com/55182321/96360232-6cc1fc00-1145-11eb-81fa-a774c81b1eb5.PNG)
+Jika dibuka, Answer.zip akan berisi "Open this.pdf" tetapi pdf tersebut memiliki password
+
+![6d](https://user-images.githubusercontent.com/55182321/96360233-6e8bbf80-1145-11eb-9621-50a7184172f5.PNG)
+Untuk mencari password nya maka menggunakan filter yang kedua dan akan keluar paket yang menyimpan zipkey.txt
+
+![6e](https://user-images.githubusercontent.com/55182321/96360234-6f245600-1145-11eb-8e21-b88cc5315542.PNG)
+follow stream dan ubah menjad raw, dan mendapatkan sebuah kalimat
+
+![6f](https://user-images.githubusercontent.com/55182321/96360235-70558300-1145-11eb-8ad3-a968afebcd02.PNG)
+masukan kalimat tersebut sebagai password pdf maka akan membuka seperti gambar diatas
 
 7. Ada 500 file zip yang disimpan ke FTP Server dengan nama 1.zip, 2.zip, ..., 500.zip. Salah satunya berisi pdf yang berisi puisi. Simpan dan Buka file pdf tersebut. Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"
 
