@@ -73,6 +73,7 @@ Kemudian dapat dilihat paketnya dan pada bagian Authorization Basicnya akan dida
 6. Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file "Open This.pdf" di Answer.zip. Untuk mendapatkan password zipnya, temukan dalam file "zipkey.txt" (passwordnya adalah isi dari file txt tersebut).
 
 **Solusi**
+
 Masukan filter
 ```ftp-data.command contains Answer.zip``` dan ```ftp-data.command contains zipkey.txt```
 
@@ -101,9 +102,23 @@ masukan kalimat tersebut sebagai password pdf maka akan membuka seperti gambar d
 
 **Solusi**
 
+Masukan filter 
+```ftp-data contains Yes.pdf```
+
+![7](https://user-images.githubusercontent.com/55182321/96360933-98e07b80-114b-11eb-9aed-a1a370766953.PNG)
+Setelah memasukan filter, akan keluar paket yang mengandung data Yes.pdf
+
+![7a](https://user-images.githubusercontent.com/55182321/96360930-95e58b00-114b-11eb-829e-6a8ec78da302.PNG)
+lalu follow tcp stream pada paket, dan dirubah menjadi raw lalu disimpan menjadi zip
+
+![7b](https://user-images.githubusercontent.com/55182321/96360932-97af4e80-114b-11eb-815a-952c8a523ce0.PNG)
+saat zip dibuka, akan ada Yes.pdf dan jika dibuka akan terlihat seperti gambar diatas
+
 8. Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!
 
 **Solusi**
+
+```A```
 
 9. Cari username dan password ketika login FTP pada localhost!
 
