@@ -118,7 +118,17 @@ saat zip dibuka, akan ada Yes.pdf dan jika dibuka akan terlihat seperti gambar d
 
 **Solusi**
 
-```A```
+Menggunakan filter
+```ftp-data.command contains "RETR"```
+
+![8](https://user-images.githubusercontent.com/55182321/96365409-9ccfc600-116a-11eb-9bf6-fe6f4557f9f7.PNG)
+Akan keluar paket paket yang memmiliki data command RETR. Namun, paket yang ditampilkan memiliki 2 sumber. 
+
+![8a](https://user-images.githubusercontent.com/55182321/96365681-94788a80-116c-11eb-8b5c-d6c95e49b35c.PNG)
+Karena yang diminta berasal dari microsoft ftp service, maka menggunakan ip address dari microsoft ftp service. Yang berarti paket yang diterima adalah Readme
+
+![8b](https://user-images.githubusercontent.com/55182321/96365805-63e52080-116d-11eb-94e2-2f9f27264f41.PNG)
+
 
 9. Cari username dan password ketika login FTP pada localhost!
 
